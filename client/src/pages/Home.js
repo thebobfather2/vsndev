@@ -3,11 +3,15 @@ import "./Home.css";
 import { ElvWalletFrameClient } from "@eluvio/elv-wallet-frame-client";
 
 // Initialize in iframe at target element
-const walletFrameClient = await ElvWalletFrameClient.InitializeFrame({
-    requestor: "VSN",
-    walletAppUrl: "https://wallet.contentfabric.io",
-    target: document.getElementById("#wallet-target")
-  });
+async function init() {
+    const walletFrameClient = await ElvWalletFrameClient.InitializeFrame({
+      requestor: "My App",
+      walletAppUrl: "https://wallet.contentfabric.io",
+      target: document.getElementById("#wallet-target")
+    });
+  }
+  
+  init();
 
 function Home () {
     return (
