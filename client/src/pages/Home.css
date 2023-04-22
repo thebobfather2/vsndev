@@ -5,6 +5,7 @@
     color: #f18750;
     text-shadow: 2px 2px #00000050;
     text-align: center;
+    min-height: 1000px;
 }
 
 .mainText {

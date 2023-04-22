@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Home.css";
 import { ElvWalletFrameClient } from "@eluvio/elv-wallet-frame-client";
     
-function Home () {
+function Marketplace () {
   const [walletFrameClient, setWalletFrameClient] = useState(null);
 
   useEffect(() => {
@@ -24,15 +24,14 @@ function Home () {
   return (
     <main className="MainContainer" style={{padding: '10px'}}>
       <section className={`p-3`}>
-        <h2>Welcome to VSN!</h2>
-      </section>
       <iframe 
         id="wallet-target" 
         title="Eluvio Wallet" 
         style={{ width: "100%", height: "100vh", border: "solid", borderColor: "white", borderWidth: "10px", borderRadius: "20px" }}>
       </iframe>
+      </section>
     </main>
   )
 }
 
-export default Home;
+export default Marketplace;

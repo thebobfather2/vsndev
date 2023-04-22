@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Tuters from './pages/tuters';
 import Signin from './pages/Signin';
-import Homework from './pages/Homework';
+import Marketplace from './pages/Marketplace';
 // import AuthNavbar from './components/AuthNavbar.js';
 import Auth from './utils/auth';
 
@@ -64,8 +64,8 @@ function App() {
               element={<Signin />}
             />
             <Route
-            path='/Homework'
-            element={<Homework />}
+            path='/Marketplace'
+            element={<Marketplace />}
             />
           </Routes>
           

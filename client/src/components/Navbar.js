@@ -30,10 +30,10 @@ function AuthNavbar({ currentPage, handlePageChange }) {
                 </Link>
 
                 <Link style={{ padding: "30px" }}
-                to="/homework"
+                to="/Marketplace"
                 // Check to see if the currentPage is `Homework`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
                 >
-                    Homework
+                    Marketplace
                 </Link>
 
                 <Link style={{ padding: "30px" }}
